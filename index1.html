@@ -1,0 +1,37 @@
+<!-- Создайте интерактивную веб-страницу для оставления и просмотра отзывов о продуктах. Пользователи могут добавлять отзывы о различных продуктах и просматривать добавленные отзывы.
+
+Страница добавления отзыва:
+
+Поле для ввода названия продукта.
+Текстовое поле для самого отзыва.
+Кнопка "Добавить отзыв", которая сохраняет отзыв о продукте в LocalStorage.
+
+Страница просмотра отзывов:
+
+Показывает список всех продуктов, о которых были оставлены отзывы.
+При клике на название продукта отображается список всех отзывов по этому продукту.
+Возможность удаления отзыва (при нажатии на кнопку "Удалить" рядом с отзывом, данный отзыв удаляется из LocalStorage). -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <script src="page1.js" defer></script>
+   <title>Отзывы о продуктах</title>
+</head>
+
+<body>
+   <a href="index1.html">Страница добавления отзывов</a>
+   <a href="index2.html">Страница просмотра отзывов</a>
+   <div class="input-form-review">
+      <p><input class="input__product" type="text" placeholder="Введите название продукта" size="40"></p>
+      <p>Введите ваш отзыв<br>
+         <textarea class="input__rewiew" name="comment" rows="3" cols="32"></textarea>
+      </p>
+      <button class="button__submit">Добавить отзыв</button>
+      <p class="message__error" style="color: red;"></p>
+   </div>
+</body>
+</html>
